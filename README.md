@@ -94,6 +94,7 @@
 |ls       | Liệt kê các tập tin trong thư mục làm việc |
 |man      | Đưa ra hướng dẫn cho một lệnh              |
 |exit     | Đăng xuất khỏi shell                       |
+
 * Lệnh hệ thống
 | Command   | Description                              |
 |:---------:|:----------------------------------------:|
@@ -101,14 +102,16 @@
 |date       | Xuất ngày hệ thống                       |
 |cal        | Xuất lịch văn bản                        |
 |uname      | In thông tin về hệ thống hiện tại        |
+
 * Lệnh thư mục
-| Directory | Description |
+| Directory | Description                                |
 |:---------:|:------------------------------------------:|
 |ls         | Liệt kê các tập tin trong thư mục làm việc |
 |pwd        | In thư mục làm việc hiện tại               |
 |cd         | Thay đổi thư mục làm việc                  |
 |mkdir      | Tạo một thư mục mới                        |
 |rmdir      | Xóa thư mục đã cho (phải trống)            |
+
 * Lệnh tệp
 | Command | Description                                      |
 |:-------:|:------------------------------------------------:|
@@ -117,6 +120,7 @@
 |mv       | Di chuyển tệp (cũng được sử dụng để đổi tên tệp) |
 |rm       | Xóa tệp đã cho                                   |
 |touch    | Tạo tệp trống hoặc thay đổi thời gian sửa đổ     |
+
 * Hệ thống quyền và tệp
    - Truy cập ngay trên thư mục / tệp
      + read (r)
