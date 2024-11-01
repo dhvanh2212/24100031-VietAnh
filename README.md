@@ -22,6 +22,7 @@
 ### 5. Phần mêm máy tính
    - Phần mềm hệ thống: Bao gồm hệ điều hành (Windows, Linux, macOS) và các chương trình giúp quản lý phần cứng.
    - Phần mềm ứng dụng: Các ứng dụng cụ thể như văn phòng (Word, Excel), đồ họa, trình duyệt web, và các phần mềm quản lý khác.
+
 ----
 ## Chương 2: Biểu diễn thông tin và hệ thông số
 ### 1. Biểu diễn thông tin trong máy tính
@@ -85,10 +86,95 @@
 ### 1. Khái niệm
    - Linux là một hệ điều hành mã nguồn mở, được phát triển từ nhân Linux (Linux kernel) và được sử dụng rộng rãi trên các máy chủ, máy tính cá nhân và thiết bị nhúng.
 ### 2. Làm việc với lệnh Linux
-| Command | Description |
+* Lệnh Shell cơ bản
+| Command | Description                                |
 |:-------:|:------------------------------------------:|
 |pwd      | In thư mục làm việc hiện tại               |
 |cd       | Thay đổi thư mục làm việc                  |
 |ls       | Liệt kê các tập tin trong thư mục làm việc |
 |man      | Đưa ra hướng dẫn cho một lệnh              |
 |exit     | Đăng xuất khỏi shell                       |
+* Lệnh hệ thống
+| Command   | Description                              |
+|:---------:|:----------------------------------------:|
+|clear      | Xóa tất cả đầu ra khỏi bảng điều khiển   |
+|date       | Xuất ngày hệ thống                       |
+|cal        | Xuất lịch văn bản                        |
+|uname      | In thông tin về hệ thống hiện tại        |
+* Lệnh thư mục
+| Directory | Description |
+|:---------:|:------------------------------------------:|
+|ls         | Liệt kê các tập tin trong thư mục làm việc |
+|pwd        | In thư mục làm việc hiện tại               |
+|cd         | Thay đổi thư mục làm việc                  |
+|mkdir      | Tạo một thư mục mới                        |
+|rmdir      | Xóa thư mục đã cho (phải trống)            |
+* Lệnh tệp
+| Command | Description                                      |
+|:-------:|:------------------------------------------------:|
+|cat      | Hiển thị nội dung tệp                            |
+|cp       | Sao chép tệp                                     |
+|mv       | Di chuyển tệp (cũng được sử dụng để đổi tên tệp) |
+|rm       | Xóa tệp đã cho                                   |
+|touch    | Tạo tệp trống hoặc thay đổi thời gian sửa đổ     |
+* Hệ thống quyền và tệp
+   - Truy cập ngay trên thư mục / tệp
+     + read (r)
+     + write (w)
+     + execute (x)
+   - Mỗi thư mục/file có 9 bit bên phải truy cập, được chia thành 3 nhóm như sau:
+     + chủ nhân
+     + nhóm (ví dụ: những người trong cùng một nhóm dự án)
+     + những người khác (những người trong phạm vi công cộng)
+* Thay đổi quyền truy cập
+   - Tượng trưng: chmod who op mode [-R] file(s)
+   - Who:
+     u : owner
+     g : group
+     o : others
+     a : all
+   - Mode:
+     r : read
+     w : write
+     x : execute
+   - Op
+     + : grant more rights
+     - : revoke rights
+     = : reset rights
+   - Số: chmod xyz [-R] file(s)
+     read = 4 write = 2 execute = 1
+| Octal value | Access right |
+|:-----------:|:------------:|
+|7            | rwx          |
+|6            | rw5 r-x      |
+|4            | r--          |
+|3            | -wx          |
+|2            | -w           |
+|1            | --x          |
+|0            | ---          |
+
+----
+## Chương 5: Kiểm soát phiên bản với Git
+### 1. Khái niệm:
+   - Git là một hệ thống kiểm soát phiên bản phân tán, cho phép theo dõi và quản lý thay đổi trong mã nguồn và tài liệu.
+### 2. Lợi ích của Git:
+   - Lưu trữ lịch sử: Git lưu trữ mọi thay đổi, giúp phục hồi phiên bản trước dễ dàng.
+   - Làm việc nhóm: Hỗ trợ nhiều người cùng làm việc trên một dự án mà không xung đột.
+   - Linh hoạt: Cho phép tạo và quản lý nhiều nhánh (branch) để phát triển các tính năng độc lập.
+### 3. Cấu trúc của Git:
+   - Repository (Repo): Nơi lưu trữ mã nguồn và lịch sử thay đổi.
+   - Commit: Một bức tranh của mã nguồn tại một thời điểm cụ thể.
+   - Branch: Một nhánh độc lập để phát triển các tính năng mới mà không làm ảnh hưởng đến nhánh chính (main).
+### 4. Các lệnh cơ bản:
+     + git init: Tạo một repository mới.
+     +git clone: Sao chép một repository từ xa về máy cục bộ.
+     +git add: Thêm thay đổi vào khu vực chuẩn bị (staging area).
+     +git commit: Lưu lại thay đổi với thông điệp mô tả.
+     +git push: Đẩy các thay đổi từ máy cục bộ lên repository từ xa.
+     +git pull: Tải và hợp nhất thay đổi từ repository từ xa về máy cục bộ.
+     +git branch: Quản lý các nhánh.
+     +git merge: Kết hợp thay đổi từ nhánh khác vào nhánh hiện tại.
+### 5. Quản lý xung đột:
+   - Xung đột có thể xảy ra khi hai người sửa cùng một phần của mã. Git cung cấp công cụ để giải quyết các xung đột này.
+### 6. Dịch vụ Git từ xa:
+   - Các dịch vụ như GitHub, GitLab, và Bitbucket cho phép lưu trữ repository trực tuyến, hỗ trợ cộng tác và chia sẻ mã nguồn.
