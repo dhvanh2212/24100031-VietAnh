@@ -140,20 +140,20 @@ python main.py
 * Thay đổi quyền truy cập
    - Tượng trưng: chmod who op mode [-R] file(s)
    - Who:
-     `u` : owner
-     `g` : group
-     `o` : others
-     `a` : all
+    + `u` : owner
+    + `g` : group
+    + `o` : others
+    + `a` : all
    - Mode:
-     r : read
-     w : write
-     x : execute
+    + `r` : read
+    + `w` : write
+    + `x` : execute
    - Op
-     + : grant more rights
-     - : revoke rights
-     = : reset rights
+    + `+` : grant more rights
+    + `-` : revoke rights
+    + `=` : reset rights
    - Số: chmod xyz [-R] file(s)
-     read = 4 write = 2 execute = 1
+    + read = 4 write = 2 execute = 1
      
 | Octal value | Access right |
 |:-----------:|:------------:|
@@ -178,14 +178,14 @@ python main.py
    - Commit: Một bức tranh của mã nguồn tại một thời điểm cụ thể.
    - Branch: Một nhánh độc lập để phát triển các tính năng mới mà không làm ảnh hưởng đến nhánh chính (main).
 ### 4. Các lệnh cơ bản:
-     +git init: Tạo một repository mới.
-     +git clone: Sao chép một repository từ xa về máy cục bộ.
-     +git add: Thêm thay đổi vào khu vực chuẩn bị (staging area).
-     +git commit: Lưu lại thay đổi với thông điệp mô tả.
-     +git push: Đẩy các thay đổi từ máy cục bộ lên repository từ xa.
-     +git pull: Tải và hợp nhất thay đổi từ repository từ xa về máy cục bộ.
-     +git branch: Quản lý các nhánh.
-     +git merge: Kết hợp thay đổi từ nhánh khác vào nhánh hiện tại.
+     + git init: Tạo một repository mới.
+     + git clone: Sao chép một repository từ xa về máy cục bộ.
+     + git add: Thêm thay đổi vào khu vực chuẩn bị (staging area).
+     + git commit: Lưu lại thay đổi với thông điệp mô tả.
+     + git push: Đẩy các thay đổi từ máy cục bộ lên repository từ xa.
+     + git pull: Tải và hợp nhất thay đổi từ repository từ xa về máy cục bộ.
+     + git branch: Quản lý các nhánh.
+     + git merge: Kết hợp thay đổi từ nhánh khác vào nhánh hiện tại.
 ### 5. Quản lý xung đột:
    - Xung đột có thể xảy ra khi hai người sửa cùng một phần của mã. Git cung cấp công cụ để giải quyết các xung đột này.
 ### 6. Dịch vụ Git từ xa:
