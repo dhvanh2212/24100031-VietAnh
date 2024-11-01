@@ -166,7 +166,7 @@
    - Commit: Một bức tranh của mã nguồn tại một thời điểm cụ thể.
    - Branch: Một nhánh độc lập để phát triển các tính năng mới mà không làm ảnh hưởng đến nhánh chính (main).
 ### 4. Các lệnh cơ bản:
-     + git init: Tạo một repository mới.
+     +git init: Tạo một repository mới.
      +git clone: Sao chép một repository từ xa về máy cục bộ.
      +git add: Thêm thay đổi vào khu vực chuẩn bị (staging area).
      +git commit: Lưu lại thay đổi với thông điệp mô tả.
