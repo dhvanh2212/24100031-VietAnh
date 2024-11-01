@@ -139,21 +139,21 @@ python main.py
      + những người khác (những người trong phạm vi công cộng)
 * Thay đổi quyền truy cập
    - Tượng trưng: chmod who op mode [-R] file(s)
-   - Who:
+      - Who:
     + `u` : owner
     + `g` : group
     + `o` : others
     + `a` : all
-   - Mode:
+      - Mode:
     + `r` : read
     + `w` : write
     + `x` : execute
-   - Op
+      - Op
     + `+` : grant more rights
     + `-` : revoke rights
     + `=` : reset rights
-   - Số: chmod xyz [-R] file(s)
-    + read = 4 write = 2 execute = 1
+      - Số: chmod xyz [-R] file(s)
+         + read = 4 write = 2 execute = 1
      
 | Octal value | Access right |
 |:-----------:|:------------:|
