@@ -87,6 +87,7 @@
    - Linux là một hệ điều hành mã nguồn mở, được phát triển từ nhân Linux (Linux kernel) và được sử dụng rộng rãi trên các máy chủ, máy tính cá nhân và thiết bị nhúng.
 ### 2. Làm việc với lệnh Linux
 * Lệnh Shell cơ bản
+  
 | Command | Description                                |
 |:-------:|:------------------------------------------:|
 |pwd      | In thư mục làm việc hiện tại               |
@@ -96,6 +97,7 @@
 |exit     | Đăng xuất khỏi shell                       |
 
 * Lệnh hệ thống
+  
 | Command   | Description                              |
 |:---------:|:----------------------------------------:|
 |clear      | Xóa tất cả đầu ra khỏi bảng điều khiển   |
@@ -104,6 +106,7 @@
 |uname      | In thông tin về hệ thống hiện tại        |
 
 * Lệnh thư mục
+  
 | Directory | Description                                |
 |:---------:|:------------------------------------------:|
 |ls         | Liệt kê các tập tin trong thư mục làm việc |
@@ -113,6 +116,7 @@
 |rmdir      | Xóa thư mục đã cho (phải trống)            |
 
 * Lệnh tệp
+  
 | Command | Description                                      |
 |:-------:|:------------------------------------------------:|
 |cat      | Hiển thị nội dung tệp                            |
