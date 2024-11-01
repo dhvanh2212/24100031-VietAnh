@@ -1,4 +1,7 @@
 # 24100031-VietAnh
+```
+python main.py
+```
 # Tổng hợp kiến thức Chương 1-5
 ----
 ## Chương 1: Cơ bản về máy tính và công nghệ thông tin
@@ -137,10 +140,10 @@
 * Thay đổi quyền truy cập
    - Tượng trưng: chmod who op mode [-R] file(s)
    - Who:
-     u : owner
-     g : group
-     o : others
-     a : all
+     `u` : owner
+     `g` : group
+     `o` : others
+     `a` : all
    - Mode:
      r : read
      w : write
