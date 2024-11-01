@@ -1,6 +1,6 @@
 # 24100031-VietAnh
 # Tổng hợp kiến thức Chương 1-5
-'''
+----
 ## Chương 1: Cơ bản về máy tính và công nghệ thông tin
 ### 1. Giới thiệu về máy tính
    - Khái niệm: Công nghệ thông tin (CNTT) là việc sử dụng máy tính, phần mềm, mạng và các công nghệ khác để xử lý, lưu trữ và truyền tải thông tin.
@@ -22,7 +22,7 @@
 ### 5. Phần mêm máy tính
    - Phần mềm hệ thống: Bao gồm hệ điều hành (Windows, Linux, macOS) và các chương trình giúp quản lý phần cứng.
    - Phần mềm ứng dụng: Các ứng dụng cụ thể như văn phòng (Word, Excel), đồ họa, trình duyệt web, và các phần mềm quản lý khác.
-'''
+----
 ## Chương 2: Biểu diễn thông tin và hệ thông số
 ### 1. Biểu diễn thông tin trong máy tính
    - Khái niệm: Thông tin được biểu diễn dưới nhiều dạng khác nhau như văn bản, hình ảnh, âm thanh và video. Mỗi dạng có cách mã hóa và lưu trữ riêng.
@@ -49,7 +49,8 @@
    - Cộng số nguyên có dấu
      + 2 số khác dấu luôn đúng
      + 2 số cùng dấu nếu kết quả cùng dấu thì đúng, khác thì sai
-'''
+
+----
 ## Chương 3: Kỹ năng sử dụng máy tính
 ### 1. Quản lý Tập tin và Thư mục với máy tính cá nhân
 * Khái niệm tập tin và thư mục
@@ -60,3 +61,34 @@
    - Thư mục: Là một đơn vị logic dùng để nhóm, tổ chức và chứa các tập tin mới mục đích khác nhau.
      + Thư mục có thể chứa nhiều thư mục con khác nhau
      + Thư mục thường được đặt tên theo nội dung hoặc mục đích sử dụng
+* Cấu trúc cây thư mục: Các tập tin và thư mục thường được tổ chức theo dạng phân cấp giống hình cây: thư mục gốc, và các thư mục con
+   - Các tập tin và thư mục thường được tổ chức theo dạng phân cấp giống hình cây: thư mục gốc, và các thư mục con
+     + Đường dẫn tuyệt đối (obsolute path)
+     + Đường dẫn tương đối (relative path)
+### 2. Quản lý Tập tin và Thư mục với Google Drive
+   - Google Drive là dịch vụ miễn phí: dịch vụ lưu trữ, phần mềm xử lý văn bản (doc), xử lý số liệu (sheet), … với định hướng hỗ trợ người dùng nâng cao hiệu quả hợp tác.
+     + Người dùng có thể truy cập dữ liệu mọi lúc mọi nơi, trên nhiều thiết bị (Web browser, Drive Apps)
+     + Hỗ trợ việc làm việc chung cho nhóm người dùng
+     + Tự động lưu trữ dữ liệu và lịch sử chỉnh sửa của files
+     + Chia sẻ dữ liệu dễ dàng, an toàn với khả năng bảo mật cao
+### 3. Tìm kiếm thông tin với Google Search
+   - Google search hoạt động dựa trên 3 giai đoạn:
+     + Crawling: download văn bản, hình ảnh, video, … từ các trang web được tìm thấy một cách tự động
+     + Indexing: Google phân tích các tập tin văn bản, hình ảnh, video và lưu trữ vào Google Index (cơ sở dữ liệu lớn)
+     + Serving search results: khi người dùng tìm kiếm trên Google, Google sẽ trả lại thông tin tương ứng với truy vấn
+### 4. Giới thiệu Generative AI và ChatGPT
+   - Generative AI (AI tạo sinh) là thuật toán trí tuệ nhân tạo được huấn luyện trên một lượng lớn dữ liệu để có thể tạo ra nội dung như văn bản, hình ảnh hoặc âm thanh.
+   - ChatGPT (Generative Pre-trained Transformer) là một mô hình AI tạo sinh có thể hiểu và phản hồi các câu hỏi của con người băng ngôn ngữ tự nhiên
+
+----
+## Chương 4: Hệ điều hành Linux
+### 1. Khái niệm
+   - Linux là một hệ điều hành mã nguồn mở, được phát triển từ nhân Linux (Linux kernel) và được sử dụng rộng rãi trên các máy chủ, máy tính cá nhân và thiết bị nhúng.
+### 2. Làm việc với lệnh Linux
+| Command | Description |
+|:-------:|:------------------------------------------:|
+|pwd      | In thư mục làm việc hiện tại               |
+|cd       | Thay đổi thư mục làm việc                  |
+|ls       | Liệt kê các tập tin trong thư mục làm việc |
+|man      | Đưa ra hướng dẫn cho một lệnh              |
+|exit     | Đăng xuất khỏi shell                       |
