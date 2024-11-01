@@ -147,6 +147,7 @@
      = : reset rights
    - Số: chmod xyz [-R] file(s)
      read = 4 write = 2 execute = 1
+     
 | Octal value | Access right |
 |:-----------:|:------------:|
 |7            | rwx          |
